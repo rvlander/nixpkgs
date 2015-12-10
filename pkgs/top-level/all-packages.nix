@@ -8275,7 +8275,7 @@ let
   rubberband = callPackage ../development/libraries/rubberband {
     inherit (vamp) vampSDK;
   };
-  
+
   sad = callPackage ../applications/science/logic/sad { };
 
   sbc = callPackage ../development/libraries/sbc { };
@@ -9420,6 +9420,7 @@ let
     postgresql94;
 
   postgresql_jdbc = callPackage ../servers/sql/postgresql/jdbc { };
+  postgresql-bdr = callPackage ../servers/sql/postgresql-bdr { };
 
   prom2json = goPackages.prometheus.prom2json.bin // { outputs = [ "bin" ]; };
   prometheus = goPackages.prometheus.prometheus.bin // { outputs = [ "bin" ]; };
